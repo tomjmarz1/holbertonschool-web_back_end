@@ -17,8 +17,8 @@ describe('calculateNumber', function () {
     assert.equal(calcul.calculateNumber(1.5, 3.7), 6);
     
   });
-  it('should work with very large values', function() {
-    const result = calculateNumber(Number.MAX_SAFE_INTEGER, 0.4);
-    assert.equal(result, Number.MAX_SAFE_INTEGER);
+  it('should work with negative values', function() {
+    const result = calculateNumber(-1, -32);
+    assert.equal(result, -33);
   });
 });
