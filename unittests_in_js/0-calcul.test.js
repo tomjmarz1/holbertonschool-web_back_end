@@ -8,9 +8,15 @@ describe('calculateNumber', function () {
   });
   it('should return result of adding rounded numbers', function () {
     assert.equal(calcul.calculateNumber(1, 3.7), 5);
+    assert.equal(calcul.calculateNumber(1.0, 0), 1);
+    assert.equal(calcul.calculateNumber(1.3, 0), 1);
+    assert.equal(calcul.calculateNumber(1.7, 0), 2);
   });
   it('should return result of adding rounded numbers', function () {
     assert.equal(calcul.calculateNumber(1.2, 3.7), 5);
+    assert.equal(calcul.calculateNumber(0, 1.0), 1);
+    assert.equal(calcul.calculateNumber(0, 1.3), 1);
+    assert.equal(calcul.calculateNumber(0, 1.7), 2);
   });
   
   it('should return result of adding rounded numbers', function () {
