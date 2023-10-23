@@ -18,7 +18,7 @@ describe('calculateNumber', function () {
     
   });
   it('should work with negative values', function() {
-    const result = calculateNumber(-1, -32);
+    const result = calcul.calculateNumber(-1, -32);
     assert.equal(result, -33);
   });
 });
