@@ -7,7 +7,7 @@ describe('calculateNumber', function () {
     assert.equal(calculateNumber(1, 3), 4);
   });
   it('should return result of adding rounded numbers', function () {
-    assert.equal(.calculateNumber(1, 3.7), 5);
+    assert.equal(.calculateNumber(1.2, 3.7), 5);
   });
   it('should return result of adding rounded numbers', function () {
     assert.equal(calculateNumber(1.0, 3.7), 5);
