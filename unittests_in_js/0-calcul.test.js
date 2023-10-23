@@ -22,7 +22,7 @@ describe('calculateNumber', function () {
     assert.equal(result, -33);
   });
   it('should work with very large values', function() {
-    const result = calculateNumber(Number.MAX_SAFE_INTEGER, 0.2);
+    const result = calcul.calculateNumber(Number.MAX_SAFE_INTEGER, 0.2);
     assert.equal(result, Number.MAX_SAFE_INTEGER);
   });
 });
