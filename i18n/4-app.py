@@ -41,7 +41,7 @@ def before_request():
     refresh()
 
 
-@app.route('/')
+@app.route('/', strict_slashes=False)
 def index():
     """ Return index.html template """
     return render_template('4-index.html')
